@@ -2,11 +2,10 @@ import { Chessboard } from 'react-chessboard';
 import { Chess } from 'chess.js';
 import { useEffect, useState } from 'react';
 import getMoveFromTurn from './utilities/getMoveFromTurn';
-
-const pgnMatch = "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 d6 8. c3 O-O 9. h3 Nb8 10. d4 Nbd7 11. Nbd2 Bb7 12. Bc2 Re8 13. Nf1 Bf8 14. Ng3 g6 15. a4 c5 16. d5 c4 17. Bg5 h6 18. Be3 Nc5 19. Qd2 Kh7 20. Nh2 Bg7 21. Rf1 Qe7 22. f4 exf4 23. R... 24. Raf1 Ne5 25. Ng4 Nxg4 26. Rxf7 Qh4 27. Bd4 Rg8 28. Qf4 Bc8 29. Qxd6 Ne3 30. Rxg7+ Rxg7 31. Bxg7 Kxg7 32. Qe5+ Kg8 33. Qe8+ Kg7 34. Rf7# 1-0";
+import pgnMatch from './services/getMatch';
 
 const MatchAnalysis = () => {
-  const [turn, setTurn] = useState<number>(5);
+  const [turn, setTurn] = useState<number>(0);
   const [position, setPosition] = useState<string>('');
 
   const handleTurn = (e: React.ChangeEvent<HTMLInputElement>): void => {
