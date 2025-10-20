@@ -1,12 +1,12 @@
 const getMoveFromTurn = (pgnMatch: string, turn: number): string => {
   const moves = pgnMatch
     .replace(/\d+\./g, '') 
-    .trim()
+    .trim() 
     .split(/\s+/);
 
   const selectedMoves = moves.slice(0, turn);
 
-  let result = '';
+  let result = ''; 
   for (let i = 0; i < selectedMoves.length; i++) {
     const moveNumber = Math.floor(i / 2) + 1;
 
@@ -16,5 +16,5 @@ const getMoveFromTurn = (pgnMatch: string, turn: number): string => {
 
   return result.trim();
 }
-
-export default getMoveFromTurn
+ 
+export default getMoveFromTurn;
