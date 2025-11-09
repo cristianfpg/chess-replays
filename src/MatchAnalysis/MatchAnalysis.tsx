@@ -3,6 +3,7 @@ import { Chess } from 'chess.js';
 import { useEffect, useState } from 'react';
 import getMoveFromTurn from './utilities/getMoveFromTurn';
 import pgnMatch from './services/getMatch';
+import SearchInput from './components/SearchInput';
 
 const MatchAnalysis = () => {
   const [turn, setTurn] = useState<number>(0);
@@ -20,7 +21,7 @@ const MatchAnalysis = () => {
 
   return(
     <>
-      <input type="number" onChange={handleTurn}/>
+      <SearchInput turn={turn} onChange={handleTurn} />
       <Chessboard
         options={{
           position: position
