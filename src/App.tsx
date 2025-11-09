@@ -1,7 +1,8 @@
-import MatchAnalysis from './MatchAnalysis/MatchAnalysis';
+import MatchAnalysis from './app/MatchAnalysis/MatchAnalysis';
+import Home from './app/Home/Home';
 
 const App = () => {
-  return <MatchAnalysis />;
+  return <Home />;
 }
 
 export default App;
