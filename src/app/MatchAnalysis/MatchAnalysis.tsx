@@ -2,7 +2,7 @@ import { Chessboard } from 'react-chessboard';
 import { Chess } from 'chess.js';
 import { useEffect, useState } from 'react';
 import getMoveFromTurn from './utilities/getMoveFromTurn';
-import pgnMatch from './services/getMatch';
+import pgnMatch from '@/services/getMatch';
 import SearchInput from './components/SearchInput';
 
 const MatchAnalysis = () => {
