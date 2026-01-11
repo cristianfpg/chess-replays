@@ -15,9 +15,13 @@
     ```
 
 2.  Activate the virtual environment:
-    - **Windows**:
+    - **Windows (PowerShell)**:
       ```powershell
-      .venv\Scripts\activate
+      .\.venv\Scripts\activate
+      ```
+    - **Windows (Command Prompt)**:
+      ```cmd
+      .venv\Scripts\activate.bat
       ```
     - **Mac/Linux**:
       ```bash
@@ -34,7 +38,7 @@
 Start the development server with:
 
 ```bash
-fastapi dev main.py
+fastapi dev app/main.py
 ```
 
 The API will be available at http://127.0.0.1:8000.
