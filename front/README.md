@@ -71,3 +71,17 @@ export default defineConfig([
   },
 ])
 ```
+
+## Getting Started
+
+To start the development server:
+
+1.  Install dependencies:
+    ```bash
+    npm install
+    ```
+
+2.  Run the dev server:
+    ```bash
+    npm run dev
+    ```
